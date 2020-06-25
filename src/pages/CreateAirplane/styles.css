@@ -1,0 +1,282 @@
+#page-create-airplane {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 38px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#page-create-airplane header {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-create-airplane header a {
+  color: var(--title-color);
+  font-weight: bold;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+#page-create-airplane header a svg {
+  margin-right: 16px;
+  color: var(--primary-color);
+}
+
+#page-create-airplane form {
+  margin: 80px auto;
+  padding: 64px;
+  max-width: 730px;
+  background: #FFF;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-create-airplane form h1 {
+  font-size: 36px;
+}
+
+#page-create-airplane form fieldset {
+  margin-top: 64px;
+  min-inline-size: auto;
+  border: 0;
+}
+
+#page-create-airplane form legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#page-create-airplane form legend h2 {
+  font-size: 24px;
+}
+
+#page-create-airplane form legend span {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+#page-create-airplane form .field-group {
+  flex: 1;
+  display: flex;
+}
+
+#page-create-airplane form .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-create-airplane form .field input[type=text],
+#page-create-airplane form .field input[type=number] {
+  flex: 1;
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#page-create-airplane form input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+#page-create-airplane form input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+
+#page-create-airplane form .field input::placeholder {
+  color: #A0A0B2;
+}
+
+#page-create-airplane form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#page-create-airplane form .field :disabled {
+  cursor: not-allowed;
+}
+
+#page-create-airplane form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+#page-create-airplane form .field-group input + input {
+  margin-left: 24px;
+}
+
+#page-create-airplane form .field-check {
+  flex-direction: row;
+  align-items: center;
+}
+
+#page-create-airplane form .field-check input[type=checkbox] {
+  background: #F0F0F5;
+}
+
+#page-create-airplane form .field-check label {
+  margin: 0 0 0 8px;
+}
+
+#page-create-airplane form #salvarAviao,
+#page-create-airplane .sucessoButtons #voltarInicio,
+#page-create-airplane .sucessoButtons #buscarAviao {
+  max-width: 360px;
+  height: 72px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+  align-self: flex-end;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+#page-create-airplane form #salvarAviao {
+  width: 45%;
+}
+
+#page-create-airplane .sucessoButtons #voltarInicio {
+  width: 50%;
+}
+
+#page-create-airplane .sucessoButtons #buscarAviao {
+  width: 50%;
+}
+
+#page-create-airplane .sucessoButtons #voltarInicio {
+  background: var(--primary-color);
+}
+
+#page-create-airplane .sucessoButtons #buscarAviao {
+  background: #4f3286;
+}
+
+#page-create-airplane a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+#page-create-airplane a strong {
+  flex: 1;
+  text-align: center;
+  color: #FFF;
+}
+
+#page-create-airplane form a span svg,
+#page-create-airplane .sucessoButtons a span svg {
+  color: #FFF !important;
+  width: 20px;
+  height: 20px;
+}
+
+#page-create-airplane form #salvarAviao:hover,
+#page-create-airplane .sucessoButtons #voltarInicio:hover {
+  background: #2FB86E;
+}
+
+#page-create-airplane .sucessoButtons #buscarAviao:hover {
+  background: var(--title-color);
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+}
+
+.items-grid li {
+  background: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  height: 180px;
+  border-radius: 8px;
+  padding: 32px 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+
+  cursor: airplaneer;
+}
+
+.items-grid li span {
+  flex: 1;
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  color: var(--title-color)
+}
+
+.items-grid li.selected {
+  background: #E1FAEC;
+  border: 2px solid #34CB79;
+}
+
+#page-create-airplane .sucesso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .9);
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.classDisplayFlex {
+  display: flex !important;
+}
+
+#page-create-airplane .sucesso svg:first-child {
+  font-size: 150px;
+  color: #2FB86E;
+}
+#page-create-airplane .sucesso h2 {
+  margin: 40px 0;
+  color: #FFF;
+}
+
+#page-create-airplane .sucessoButtons {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#page-create-airplane .sucessoButtons #buscarAviao{
+  margin-left: 15px;
+}

@@ -1,0 +1,435 @@
+#page-create-airplane {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 38px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#page-create-airplane header {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-create-airplane header a {
+  color: var(--title-color);
+  font-weight: bold;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+#page-create-airplane header a svg {
+  margin-right: 16px;
+  color: var(--primary-color);
+}
+
+#page-create-airplane form {
+  margin: 80px auto;
+  padding: 64px;
+  max-width: 730px;
+  background: #FFF;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-create-airplane form h1 {
+  font-size: 36px;
+}
+
+#page-create-airplane form fieldset {
+  margin-top: 64px;
+  min-inline-size: auto;
+  border: 0;
+}
+
+#page-create-airplane form legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#page-create-airplane form legend h2 {
+  font-size: 24px;
+}
+
+#page-create-airplane form legend span {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+#page-create-airplane form .field-group {
+  flex: 1;
+  display: flex;
+}
+
+#page-create-airplane form .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-create-airplane form .field input[type=text] {
+  flex: 1;
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#page-create-airplane form .field input::placeholder {
+  color: #A0A0B2;
+}
+
+#page-create-airplane form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#page-create-airplane form .field :disabled {
+  cursor: not-allowed;
+}
+
+#page-create-airplane form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+#page-create-airplane form .field-group input + input {
+  margin-left: 24px;
+}
+
+#page-create-airplane form .field-check {
+  flex-direction: row;
+  align-items: center;
+}
+
+#page-create-airplane form .field-check input[type=checkbox] {
+  background: #F0F0F5;
+}
+
+#page-create-airplane form .field-check label {
+  margin: 0 0 0 8px;
+}
+
+#page-create-airplane form #cadastrarAviao,
+#page-create-airplane .btnSearchFiltered,
+#page-create-airplane #iconShowHideEditAirplane {
+  max-width: 360px;
+  height: 72px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+  align-self: flex-end;
+  margin-top: 40px;
+}
+
+#page-create-airplane #iconShowHideEditAirplane {
+  background: #4f3286;
+  align-self: flex-start;
+}
+
+#page-create-airplane #iconShowHideEditAirplane:hover {
+  background: var(--title-color);
+}
+
+#page-create-airplane .btnSearchFiltered {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: #FFF;
+  margin-top: 30px;
+  cursor: pointer;
+
+}
+
+#page-create-airplane form #cadastrarAviao,
+#page-create-airplane #iconShowHideEditAirplane {
+  width: 45%;
+}
+
+#page-create-airplane a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+#page-create-airplane a strong {
+  flex: 1;
+  text-align: center;
+  color: #FFF;
+}
+
+#page-create-airplane form a span svg {
+  color: #FFF !important;
+  width: 20px;
+  height: 20px;
+}
+
+#page-create-airplane form #cadastrarAviao:hover {
+  background: #2FB86E;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+}
+
+.items-grid li {
+  background: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  height: 180px;
+  border-radius: 8px;
+  padding: 32px 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+
+  cursor: airplaneer;
+}
+
+.items-grid li span {
+  flex: 1;
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  color: var(--title-color)
+}
+
+.items-grid li.selected {
+  background: #E1FAEC;
+  border: 2px solid #34CB79;
+}
+
+/* .divTable tbody tr:nth-child(odd){
+  background-color: #f0f0f5;
+} */
+
+.divTable {
+  margin-top: 15px;
+}
+
+.divTable thead td,
+.divTable tbody td {
+  padding: 0 10px;
+  font-weight: 500;
+  line-height: 3.5;
+}
+
+.divTable thead tr {
+  background-color: var(--title-color);
+  color: #FFF;
+}
+
+.divTable thead tr td:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+.divTable thead tr td:last-child{
+  border-radius: 0 5px 0 0;
+}
+
+.divTable tbody tr {
+  border-bottom: 1px solid #2FB86E;
+}
+
+.divTable tbody tr:hover {
+  background-color: #d8d8da;
+  /* cursor: pointer; */
+}
+
+.divTable .iconEdit,
+.divTable .iconDelete,
+.divTable .iconView,
+#iconShowHideViewAirplane {
+  cursor: pointer;
+}
+
+.divTable .iconView {
+  /* background-color: #f0f0f5; */
+  padding: 10px 10px;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+  /* border-left: 1px solid; */
+  /* border-top: 1px solid; */
+  /* border-bottom: 1px solid; */
+}
+
+.divTable .iconEdit {
+  /* background-color: #f0f0f5; */
+  padding: 10px 10px;
+  margin: 0;  
+  /* border-top: 1px solid; */
+  /* border-bottom: 1px solid; */
+}
+
+.divTable .iconDelete {
+  /* background-color: #f0f0f5; */
+  padding: 10px 10px;
+  margin: 0;
+  border-radius: 0 5px 5px 0;
+  /* border-top: 1px solid; */
+  /* border-right: 1px solid; */
+  /* border-bottom: 1px solid; */
+}
+
+.divTable .iconView svg {
+  color: #2FB86E;
+}
+
+#iconShowHideViewAirplane {
+  order: 1px solid;
+  border-radius: 25%;
+  padding: 0 6px 4px 6px;
+  background-color: #2FB86E;
+  color: #FFF;
+}
+
+#iconShowHideViewAirplane:hover {
+  transform: scale(1.5);
+  border-radius: 50% !important;
+}
+
+#iconShowHideViewAirplane {
+  position: absolute;
+  right: 50px;
+}
+
+.divTable .iconEdit svg {
+  color: #007bff;
+}
+
+.divTable .iconDelete svg{
+  color: #dc3545;
+}
+
+.divTable .iconEdit svg:hover,
+.divTable .iconDelete svg:hover {
+  color: #34CB79;
+}
+
+#page-create-airplane .viewAirplane,
+#page-create-airplane #editAirplane {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  background: rgba(0, 0, 0, .9);
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 2s linear ease-in-out;
+}
+
+#page-create-airplane .viewAirplane .viewAirplaneContent {
+  width: 65%;
+  background-color: #FFF;
+  /* box-shadow: 0px 0px 105px #CECECE; */
+  border-radius: 10px;
+  padding: 50px;
+  position: relative;
+}
+
+.classDisplayFlex {
+  display: flex !important;
+}
+
+#page-create-airplane #viewAirplane #spanNPassageiros,
+#page-create-airplane #viewAirplane #spanFabricante,
+#page-create-airplane #viewAirplane #spanModelo {
+  position: absolute;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+#page-create-airplane #viewAirplane #spanNPassageiros span,
+#page-create-airplane #viewAirplane #spanFabricante span,
+#page-create-airplane #viewAirplane #spanModelo span {
+  color: var(--primary-color);
+}
+
+#page-create-airplane #viewAirplane #spanNPassageiros {
+  right: 8% !important;
+  top: 32% !important;
+}
+
+#page-create-airplane #viewAirplane #spanFabricante {
+  left: 10% !important;
+  bottom: 22% !important;
+}
+
+#page-create-airplane #viewAirplane #spanModelo {
+  right: 18% !important;
+  bottom: 15% !important;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.Rotate svg {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#buttonsUpdate {
+  display: flex;
+  justify-content: space-around;
+}
+
+#iconShowHideEditAirplane {  
+  cursor: pointer;
+}
+
+.formSearch {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.formFields {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.formFieldSet {
+  margin-top: 0 !important;
+}
