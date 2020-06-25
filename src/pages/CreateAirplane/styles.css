@@ -172,7 +172,8 @@
   background: #4f3286;
 }
 
-#page-create-airplane a span {
+#page-create-airplane a span,
+#page-create-airplane #buscarAviao span {
   display: block;
   background: rgba(0, 0, 0, 0.08);
   width: 72px;
@@ -184,14 +185,17 @@
   transition: background-color 0.2s;
 }
 
-#page-create-airplane a strong {
+#page-create-airplane a strong,
+#page-create-airplane #buscarAviao strong {
+  display: block;
   flex: 1;
   text-align: center;
   color: #FFF;
 }
 
 #page-create-airplane form a span svg,
-#page-create-airplane .sucessoButtons a span svg {
+#page-create-airplane .sucessoButtons a span svg,
+#page-create-airplane .sucessoButtons #buscarAviao span svg {
   color: #FFF !important;
   width: 20px;
   height: 20px;

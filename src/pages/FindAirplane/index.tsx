@@ -337,8 +337,8 @@ const FindAirplane = () => {
                         </span>
                         <strong>Voltar para o início</strong>
                     </Link>
-                    <div id="buscarAviao" >
-                        <span onClick={handleCloseBeforeUpdate}>
+                    <div id="buscarAviao" onClick={handleCloseBeforeUpdate}>
+                        <span>
                             <FiX />
                         </span>
                         <strong>Fechar</strong>
